@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Filtros_Extensiones">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="tipo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Filtros_ExtensionesResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Filtros_ExtensionesResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Filtros_ExtensionesSoapIn">
+    <wsdl:part name="parameters" element="tns:Filtros_Extensiones" />
+  </wsdl:message>
+  <wsdl:message name="Filtros_ExtensionesSoapOut">
+    <wsdl:part name="parameters" element="tns:Filtros_ExtensionesResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ServiciosSoap">
+    <wsdl:operation name="Filtros_Extensiones">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Selección de extensiones</wsdl:documentation>
+      <wsdl:input message="tns:Filtros_ExtensionesSoapIn" />
+      <wsdl:output message="tns:Filtros_ExtensionesSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ServiciosSoap" type="tns:ServiciosSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Filtros_Extensiones">
+      <soap:operation soapAction="http://tempuri.org/Filtros_Extensiones" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ServiciosSoap12" type="tns:ServiciosSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Filtros_Extensiones">
+      <soap12:operation soapAction="http://tempuri.org/Filtros_Extensiones" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Servicios">
+    <wsdl:port name="ServiciosSoap" binding="tns:ServiciosSoap">
+      <soap:address location="http://localhost:8091/Servicios.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ServiciosSoap12" binding="tns:ServiciosSoap12">
+      <soap12:address location="http://localhost:8091/Servicios.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

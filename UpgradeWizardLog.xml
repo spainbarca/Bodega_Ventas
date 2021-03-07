@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="_UpgradeWizard_Files\UpgradeWizardLog.xslt"?>
+<log>
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\Bodega_Ventas.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\App.config" />
+  <event action="Analyze" type="Success" name="aperturacaja.resx" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\MODULOS\CAJA\aperturacaja.resx" />
+  <event action="Analyze" type="Success" name="cierrecaja.resx" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\MODULOS\CAJA\cierrecaja.resx" />
+  <event action="Analyze" type="Success" name="inventariokardexok.resx" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\MODULOS\INVENTARIO\inventariokardexok.resx" />
+  <event action="Analyze" type="Success" />
+  <event action="Analyze" type="Success" name="Register Directives" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\MODULOS\LOGIN\correo.html" />
+  <event action="Analyze" type="Success" name="Assembly Directives" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\MODULOS\LOGIN\correo.html" />
+  <event action="Analyze" type="Success" name="correo.html" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\MODULOS\LOGIN\correo.html" />
+  <event action="Analyze" type="Success" name="login.resx" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\MODULOS\LOGIN\login.resx" />
+  <event action="Analyze" type="Success" name="asistente_excel.resx" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\MODULOS\PRODUCTOS\asistente_excel.resx" />
+  <event action="Analyze" type="Success" name="Asistente_Importar_Excel.resx" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\MODULOS\PRODUCTOS\Asistente_Importar_Excel.resx" />
+  <event action="Analyze" type="Success" name="OpcionesProductook.resx" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\MODULOS\PRODUCTOS\OpcionesProductook.resx" />
+  <event action="Analyze" type="Success" name="productosok.resx" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\MODULOS\PRODUCTOS\productosok.resx" />
+  <event action="Analyze" type="Success" name="usuariosok.resx" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\MODULOS\USUARIOS\usuariosok.resx" />
+  <event action="Analyze" type="Success" name="ventasprincipalok.resx" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\MODULOS\VENTAS_PRINCIPAL\ventasprincipalok.resx" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\packages.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\packages.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\packages.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\packages.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\packages.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\packages.config" />
+  <event action="Analyze" type="Success" name="packages.config" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\packages.config" />
+  <event action="Analyze" type="Success" name="conexion_manual.resx" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\PANEL_ADMIN_SOFTWARE\conexion_manual.resx" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="Bodega_Ventas" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\Bodega_Ventas.csproj" />
+  <event>Get project references.</event>
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\Telerik_complemento_CS.csproj" />
+  <event action="Analyze" type="Success" name="Assembly References" path="C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\App.config" />
+  <event action="Analyze" type="Success" name="Http Handlers" path="C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\App.config" />
+  <event action="Analyze" type="Success" name="Handlers (IIS7+)" path="C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\App.config" />
+  <event action="Analyze" type="Success" name="Config Sections" path="C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\App.config" />
+  <event action="Analyze" type="Success" name="Render Extensions" path="C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\App.config" />
+  <event action="Analyze" type="Success" name="Session State Providers" path="C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\App.config" />
+  <event action="Analyze" type="Success" name="App.config" path="C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\App.config" />
+  <event action="Analyze" type="Success" name="Resources.resx" path="C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\Properties\Resources.resx" />
+  <event action="Analyze" type="Success" name="Telerik_complemento_CS" path="C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\Telerik_complemento_CS.csproj" />
+  <event action="Analyze" type="Success" name="Bodega_Ventas" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas.sln" />
+  <event action="Backup" type="Success" name="Bodega_Ventas" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\Bodega_Ventas.csproj" />
+  <event action="Backup" type="Success" name="Telerik_complemento_CS" path="C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\Telerik_complemento_CS.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\Bodega_Ventas.csproj" />
+  <event action="Upgrade" type="Success" name="Bodega_Ventas" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas\Bodega_Ventas.csproj" />
+  <event action="Upgrade" type="Success" name="Assembly References" path="C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\Telerik_complemento_CS.csproj" />
+  <event action="Upgrade" type="Success" name="Telerik_complemento_CS" path="C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\Telerik_complemento_CS.csproj" />
+  <event action="Upgrade" type="Success" name="Bodega_Ventas" path="C:\Users\Noah\source\repos\Bodega_Ventas\Bodega_Ventas.sln" />
+</log>

@@ -1,0 +1,24 @@
+D:\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik_complemento_CS.exe.config
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik_complemento_CS.exe.config
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik_complemento_CS.exe
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik_complemento_CS.pdb
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik.Reporting.Data.Schema.dll
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik.Reporting.dll
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik.ReportViewer.WinForms.dll
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik.ReportViewer.Wpf.dll
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik.ReportViewer.Wpf.Themes.dll
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik.Reporting.pdb
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik.Reporting.xml
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik.ReportViewer.WinForms.pdb
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik.ReportViewer.WinForms.xml
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik.ReportViewer.Wpf.pdb
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik.ReportViewer.Wpf.xml
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik.ReportViewer.Wpf.Themes.pdb
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\bin\Debug\Telerik.ReportViewer.Wpf.Themes.xml
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\obj\Debug\Telerik_complemento_CS.csprojAssemblyReference.cache
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\obj\Debug\Telerik_complemento_CS.Properties.Resources.resources
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\obj\Debug\Telerik_complemento_CS.csproj.GenerateResource.cache
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\obj\Debug\Telerik_complemento_CS.csproj.CoreCompileInputs.cache
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\obj\Debug\Telerik_complemento_CS.csproj.CopyComplete
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\obj\Debug\Telerik_complemento_CS.exe
+C:\Users\Noah\source\repos\Bodega_Ventas\050 Telerik-complemento-CS\Telerik_complemento_CS\Telerik_complemento_CS\obj\Debug\Telerik_complemento_CS.pdb

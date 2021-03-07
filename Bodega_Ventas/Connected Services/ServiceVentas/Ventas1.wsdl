@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerIdVenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="caja" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerIdVentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ObtenerIdVentaResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarVenta">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idCliente" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idUsuario" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="idCaja" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcesarVentaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ProcesarVentaResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerIdVentaSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerIdVenta" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerIdVentaSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerIdVentaResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarVentaSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcesarVenta" />
+  </wsdl:message>
+  <wsdl:message name="ProcesarVentaSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcesarVentaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VentasSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerIdVenta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Extraer el Id de la venta para hacer la venta</wsdl:documentation>
+      <wsdl:input message="tns:ObtenerIdVentaSoapIn" />
+      <wsdl:output message="tns:ObtenerIdVentaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarVenta">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Registrar la venta</wsdl:documentation>
+      <wsdl:input message="tns:ProcesarVentaSoapIn" />
+      <wsdl:output message="tns:ProcesarVentaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VentasSoap" type="tns:VentasSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerIdVenta">
+      <soap:operation soapAction="http://tempuri.org/ObtenerIdVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarVenta">
+      <soap:operation soapAction="http://tempuri.org/ProcesarVenta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VentasSoap12" type="tns:VentasSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerIdVenta">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerIdVenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcesarVenta">
+      <soap12:operation soapAction="http://tempuri.org/ProcesarVenta" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Ventas">
+    <wsdl:port name="VentasSoap" binding="tns:VentasSoap">
+      <soap:address location="https://localhost:44343/VENTAS_PRINCIPAL/Ventas.asmx" />
+    </wsdl:port>
+    <wsdl:port name="VentasSoap12" binding="tns:VentasSoap12">
+      <soap12:address location="https://localhost:44343/VENTAS_PRINCIPAL/Ventas.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

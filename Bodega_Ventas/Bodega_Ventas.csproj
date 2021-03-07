@@ -1,0 +1,516 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8C6B53F4-F1AE-4A1D-BA11-64677930A139}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bodega_Ventas</RootNamespace>
+    <AssemblyName>Bodega_Ventas</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DocumentFormat.OpenXml, Version=2.5.5631.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DocumentFormat.OpenXml.2.5\lib\DocumentFormat.OpenXml.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AnalysisServices, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="SpreadsheetLight, Version=3.4.11.0, Culture=neutral, PublicKeyToken=32fbb46dc1730c57, processorArchitecture=MSIL">
+      <HintPath>..\packages\SpreadsheetLight.3.4.11\lib\net40\SpreadsheetLight.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Management.Instrumentation" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsAzureTelemetryEvents, Version=2.7.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Telerik.Reporting, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WebForms, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.WinForms, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.Wpf, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+    <Reference Include="Telerik.ReportViewer.Wpf.Themes, Version=13.0.19.116, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="CONEXION\Conexion.cs" />
+    <Compile Include="CONEXION\Datatables_tamañoAuto.cs" />
+    <Compile Include="CONEXION\Desencriptacion.cs" />
+    <Compile Include="CONEXION\Encriptacion.cs" />
+    <Compile Include="CONEXION\EncriptarTexto.cs" />
+    <Compile Include="CONEXION\Separadores_Numeros.cs" />
+    <Compile Include="CONEXION\WinAutoComplete.cs" />
+    <Compile Include="Connected Services\ServiceBoleta\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceClientes\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceInventarios\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServicePedidos\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceProductos\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceUsuarios\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceUtilitarios\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Connected Services\ServiceVentas\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MODULOS\BOLETAS\Boleta_Ventas.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\BOLETAS\Boleta_Ventas.Designer.cs">
+      <DependentUpon>Boleta_Ventas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\BOLETAS\FormBoletaVentas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\BOLETAS\FormBoletaVentas.Designer.cs">
+      <DependentUpon>FormBoletaVentas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CAJA\aperturacaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CAJA\aperturacaja.Designer.cs">
+      <DependentUpon>aperturacaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CAJA\cierrecaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CAJA\cierrecaja.Designer.cs">
+      <DependentUpon>cierrecaja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CATALOGO\FormCatalogo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CATALOGO\FormCatalogo.Designer.cs">
+      <DependentUpon>FormCatalogo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\CLIENTES\FormClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\CLIENTES\FormClientes.Designer.cs">
+      <DependentUpon>FormClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\DASHBOARD\Dashboard_Principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\DASHBOARD\Dashboard_Principal.Designer.cs">
+      <DependentUpon>Dashboard_Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\INVENTARIO\inventariokardexok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\INVENTARIO\inventariokardexok.Designer.cs">
+      <DependentUpon>inventariokardexok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\LOGIN\login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\LOGIN\login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\asistente_excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\asistente_excel.Designer.cs">
+      <DependentUpon>asistente_excel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\Asistente_Importar_Excel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\Asistente_Importar_Excel.Designer.cs">
+      <DependentUpon>Asistente_Importar_Excel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\OpcionesProductook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\OpcionesProductook.Designer.cs">
+      <DependentUpon>OpcionesProductook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\productosok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\PRODUCTOS\productosok.Designer.cs">
+      <DependentUpon>productosok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_KARDEX\FormInventariosTodos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_KARDEX\FormInventariosTodos.Designer.cs">
+      <DependentUpon>FormInventariosTodos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_KARDEX\Reporte_Inventarios_Todos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_KARDEX\Reporte_Inventarios_Todos.Designer.cs">
+      <DependentUpon>Reporte_Inventarios_Todos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_KARDEX\Reporte_Kardex.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_KARDEX\Reporte_Kardex.Designer.cs">
+      <DependentUpon>Reporte_Kardex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_PEDIDOS\FormPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_PEDIDOS\FormPedidos.Designer.cs">
+      <DependentUpon>FormPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_PEDIDOS\Reporte_Pedidos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MODULOS\REPORTES\REPORTES_PEDIDOS\Reporte_Pedidos.Designer.cs">
+      <DependentUpon>Reporte_Pedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\USUARIOS\usuariosok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\USUARIOS\usuariosok.Designer.cs">
+      <DependentUpon>usuariosok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_PRINCIPAL\ventasprincipalok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MODULOS\VENTAS_PRINCIPAL\ventasprincipalok.Designer.cs">
+      <DependentUpon>ventasprincipalok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PANEL_ADMIN_SOFTWARE\conexion_manual.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PANEL_ADMIN_SOFTWARE\conexion_manual.Designer.cs">
+      <DependentUpon>conexion_manual.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="MODULOS\BOLETAS\Boleta_Ventas.resx">
+      <DependentUpon>Boleta_Ventas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\BOLETAS\FormBoletaVentas.resx">
+      <DependentUpon>FormBoletaVentas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CAJA\aperturacaja.resx">
+      <DependentUpon>aperturacaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CAJA\cierrecaja.resx">
+      <DependentUpon>cierrecaja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CATALOGO\FormCatalogo.resx">
+      <DependentUpon>FormCatalogo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\CLIENTES\FormClientes.resx">
+      <DependentUpon>FormClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\DASHBOARD\Dashboard_Principal.resx">
+      <DependentUpon>Dashboard_Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\INVENTARIO\inventariokardexok.resx">
+      <DependentUpon>inventariokardexok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\LOGIN\login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\PRODUCTOS\asistente_excel.resx">
+      <DependentUpon>asistente_excel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\PRODUCTOS\Asistente_Importar_Excel.resx">
+      <DependentUpon>Asistente_Importar_Excel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\PRODUCTOS\OpcionesProductook.resx">
+      <DependentUpon>OpcionesProductook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\PRODUCTOS\productosok.resx">
+      <DependentUpon>productosok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_KARDEX\FormInventariosTodos.resx">
+      <DependentUpon>FormInventariosTodos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_KARDEX\Reporte_Inventarios_Todos.resx">
+      <DependentUpon>Reporte_Inventarios_Todos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_KARDEX\Reporte_Kardex.resx">
+      <DependentUpon>Reporte_Kardex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_PEDIDOS\FormPedidos.resx">
+      <DependentUpon>FormPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\REPORTES\REPORTES_PEDIDOS\Reporte_Pedidos.resx">
+      <DependentUpon>Reporte_Pedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\USUARIOS\usuariosok.resx">
+      <DependentUpon>usuariosok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MODULOS\VENTAS_PRINCIPAL\ventasprincipalok.resx">
+      <DependentUpon>ventasprincipalok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PANEL_ADMIN_SOFTWARE\conexion_manual.resx">
+      <DependentUpon>conexion_manual.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Connected Services\ServiceBoleta\Bodega_Ventas.ServiceBoleta.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceBoleta\Boleta1.wsdl" />
+    <None Include="Connected Services\ServiceClientes\Bodega_Ventas.ServiceClientes.ContarClientesActivosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceClientes\Bodega_Ventas.ServiceClientes.ContarClientesEliminadosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceClientes\Bodega_Ventas.ServiceClientes.EditarClienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceClientes\Bodega_Ventas.ServiceClientes.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceClientes\Bodega_Ventas.ServiceClientes.InsertarClienteResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceClientes\Bodega_Ventas.ServiceClientes.RestaurarClientesEliminadosResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceClientes\Clientes1.wsdl" />
+    <None Include="Connected Services\ServiceInventarios\Bodega_Ventas.ServiceInventarios.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceInventarios\Inventarios1.wsdl" />
+    <None Include="Connected Services\ServicePedidos\Bodega_Ventas.ServicePedidos.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicePedidos\Bodega_Ventas.ServicePedidos.ObtenerIdCategoriaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServicePedidos\Pedidos1.wsdl" />
+    <None Include="Connected Services\ServiceProductos\Bodega_Ventas.ServiceProductos.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceProductos\Bodega_Ventas.ServiceProductos.InsertarCategoríaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceProductos\Bodega_Ventas.ServiceProductos.InsertarSubcategoriaResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceProductos\Productos1.wsdl" />
+    <None Include="Connected Services\ServiceUsuarios\Bodega_Ventas.ServiceUsuarios.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceUsuarios\Bodega_Ventas.ServiceUsuarios.ObtenerIdUsuarioResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceUsuarios\Usuarios1.wsdl" />
+    <None Include="Connected Services\ServiceUtilitarios\Bodega_Ventas.ServiceUtilitarios.Filtros_ExtensionesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceUtilitarios\Bodega_Ventas.ServiceUtilitarios.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceUtilitarios\Utilitarios1.wsdl" />
+    <None Include="Connected Services\ServiceVentas\Bodega_Ventas.ServiceVentas.HelloWorldResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\ServiceVentas\Ventas1.wsdl" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="2700822.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="tienda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="store oficial.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CONEXION\ConnectionString.xml" />
+    <None Include="Connected Services\ServiceUtilitarios\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceUtilitarios\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceUtilitarios\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ServiceProductos\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceProductos\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceProductos\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ServiceUsuarios\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceUsuarios\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceUsuarios\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ServiceClientes\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceClientes\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceClientes\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ServiceVentas\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceVentas\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceVentas\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ServiceBoleta\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceBoleta\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceBoleta\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ServiceInventarios\configuration91.svcinfo" />
+    <None Include="Connected Services\ServiceInventarios\configuration.svcinfo" />
+    <None Include="Connected Services\ServiceInventarios\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ServicePedidos\configuration91.svcinfo" />
+    <None Include="Connected Services\ServicePedidos\configuration.svcinfo" />
+    <None Include="Connected Services\ServicePedidos\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\ServiceBoleta\Boleta1.disco" />
+    <None Include="Connected Services\ServiceClientes\Clientes1.disco" />
+    <None Include="Connected Services\ServiceInventarios\Inventarios1.disco" />
+    <None Include="Connected Services\ServicePedidos\Pedidos1.disco" />
+    <None Include="Connected Services\ServiceProductos\Productos1.disco" />
+    <None Include="Connected Services\ServiceUsuarios\Usuarios1.disco" />
+    <None Include="Connected Services\ServiceUtilitarios\Utilitarios1.disco" />
+    <None Include="Connected Services\ServiceVentas\Ventas1.disco" />
+    <Content Include="MODULOS\LOGIN\correo.html" />
+    <Resource Include="tenor.gif" />
+    <Content Include="intro.wmv" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Connected Services\ServiceBoleta\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceClientes\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceInventarios\" />
+    <WCFMetadataStorage Include="Connected Services\ServicePedidos\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceProductos\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceUsuarios\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceUtilitarios\" />
+    <WCFMetadataStorage Include="Connected Services\ServiceVentas\" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

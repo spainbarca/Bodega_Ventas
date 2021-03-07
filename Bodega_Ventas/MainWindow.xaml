@@ -1,0 +1,29 @@
+﻿<Window x:Class="Bodega_Ventas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Bodega_Ventas"
+        mc:Ignorable="d"
+        Title="Sistema de Ventas Bodega" Height="635" Width="700">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="2700822.jpg"/>
+        </Grid.Background>
+
+        <Button x:Name="btnLlamar"  Content="Pulsa Aquí" HorizontalAlignment="Left" Height="104" Margin="116,474,0,0" VerticalAlignment="Top" Width="458" FontSize="72" FontFamily="Old English Text MT" Click="btnLlamar_Click" Background="#FFFFD33C"/>
+        <Label Content="" HorizontalAlignment="Left" Height="86" Margin="32,10,0,0" VerticalAlignment="Top" Width="85">
+            <Label.Background>
+                <ImageBrush ImageSource="store oficial.png"/>
+            </Label.Background>
+        </Label>
+        <Label Content="BodeGaaaaa" HorizontalAlignment="Left" Height="30" Margin="22,96,0,0" VerticalAlignment="Top" Width="95" Background="#00000000" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        <Label Content="SISTEMA DE VENTAS" HorizontalAlignment="Left" Margin="140,34,0,508" Width="512" FontFamily="Ravie" FontSize="36" Foreground="White"/>
+        <Image HorizontalAlignment="Left" Height="262" Margin="88,167,0,0" VerticalAlignment="Top" Width="508" Source="tenor.gif">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="tenor.gif"/>
+            </Image.OpacityMask>
+        </Image>
+        <Button x:Name="btnbd" Content="BD" HorizontalAlignment="Left" Height="40" Margin="601,139,0,0" VerticalAlignment="Top" Width="81" Click="btnbd_Click" FontSize="20" Background="#FF00FFF3"/>
+    </Grid>
+</Window>
